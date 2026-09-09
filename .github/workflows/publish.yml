@@ -2,8 +2,9 @@ name: TWD Publish scrapes
 
 on:
   # Run every Monday at 08:00 UTC (after the weekly scrape has run)
-  schedule:
-    - cron: "0 8 * * 1"
+  # Stop the autoamted workflow until bug fixing
+  # schedule:
+  #   - cron: "0 8 * * 1"
 
   # Manual trigger from the Actions tab
   workflow_dispatch:
